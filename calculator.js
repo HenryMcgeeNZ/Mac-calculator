@@ -24,7 +24,6 @@ function handleDecimalPoint() {
   if (screenDisplay.slice(-1) === ".") {
     return;
   }
-
   if (screenDisplay === "0" || newNum === true) {
     if (previousOperator === null) {
       screenDisplay += ".";
@@ -104,7 +103,6 @@ function computeOperation(screenNum) {
     runningTotal /= screenNum;
   }
   runningTotal = runningTotal.toFixed(6);
-  console.log("running total = " + runningTotal);
   screenDisplay = "" + runningTotal;
   decreaseFontSize();
 }
