@@ -28,6 +28,7 @@ body {
 
 .icon-bar {
   display: flex;
+  flex: 20%;
 }
 
 .icon {
@@ -51,16 +52,21 @@ body {
 }
 
 .screen-display {
-  height: 100%;
+  flex: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.screen-num {
   color: white;
-  text-align: right;
   font-size: 60px;
-  line-height: 100%;
-  margin-top: 15px;
-  margin-right: 15px;
+  text-align: right;
+  margin-right: 20px;
   margin-left: 20px;
-  font-weight: 60px;
-  overflow: scroll;
+  padding-left: 30px;
+  direction: rtl;
+  overflow: hidden;
 }
 
 .keypad {
@@ -82,6 +88,7 @@ body {
   align-items: center;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .key:hover {
